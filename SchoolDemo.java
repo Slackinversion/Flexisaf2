@@ -16,7 +16,7 @@ class School {
             this.studentName = name;
         }
 
-        // display student details
+        // student details
         public void showStudent() {
             System.out.println("Student Name: " + studentName);
             System.out.println("Belongs to: " + schoolName);
