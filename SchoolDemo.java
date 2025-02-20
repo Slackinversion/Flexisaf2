@@ -11,26 +11,26 @@ class School {
     class Student {
         private String studentName; // Private field
 
-        // Constructor for Student
+        // Constructor 
         public Student(String name) {
             this.studentName = name;
         }
 
-        // Method to display student details
+        // display student details
         public void showStudent() {
             System.out.println("Student Name: " + studentName);
-            System.out.println("Belongs to: " + schoolName); // Can access outer class private field
+            System.out.println("Belongs to: " + schoolName);
         }
     }
 }
 
 public class SchoolDemo {
     public static void main(String[] args) {
-        // Create an instance of School
+        //  instance of School
         School mySchool = new School();
         mySchool.showSchoolName();
 
-        // Create an instance of the nested Student class
+        //  instance of the nested Student class
         School.Student student1 = mySchool.new Student("Walter");
         student1.showStudent();
 
